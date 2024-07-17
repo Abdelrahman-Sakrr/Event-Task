@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Event Task</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	 
+	<div class="spinner-border myLoader" role="status">
+	  </div>
+	<div class="myBox mx-auto my-2 container rounded-3">
+		<h2 class="text-center pt-4 text-xl font-mono font-semibold">Customer Transactions</h2>
+		<div action="" class="w-100">
+			<div class="d-flex justify-content-center align-items-center">
+				<div class="w-25">
+					<div class="text-center mx-3">
+						
+						<input type="text" placeholder="Customer Name"
+						 class="rounded-3 m-3 form-control customerName" >
+					</div>
+				</div>
+	
+				<div class="w-25">
+					<div class="text-center">
+						<input type="text" placeholder="Transaction Amount" class="mx-2 form-control amount">
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center my-2">
+				<button class="btn btn-outline-info w-25 mb-3" onclick="customersLoad();">Filter</button>
+			</div>
+			
+		</div>
+	</div>
+	<hr>
+	<br>
+	<table class="table table-dark fs-5 w-75 mx-auto text-center no-wrap">
+		<thead class="">
+		  <tr class="">
+			<th scope="col" class="">Customer ID</th>
+			<th scope="col" class="">Transaction ID</th>
+			<th scope="col" class="">Customer Name</th>
+			<th scope="col" class="">Transaction Amount</th>
+			<th scope="col" class="">Date</th>
+
+		  </tr>
+		</thead>
+		<tbody id="rowData">
+
+
+		</tbody>
+	  </table>
+
+<div class="container mx-auto w-75 my-3 ">
+	<div class="bg-body">
+		<canvas id="myChart"></canvas>
+	  </div>
+</div>
+
+	  <!-- chart js --> 
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+	<script src="js/main.js"></script>
+</body>
+</html>
